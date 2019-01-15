@@ -1,0 +1,114 @@
+html,
+body{
+ height: 100%;
+}
+
+/*********************************** global */
+h1, h2, h3, h4, h5, h6{
+    color: #666 !important;
+}
+
+/***********************************  */
+#logo-text{
+    color: white !important;
+}
+#a-logo-text{
+    color: white !important;
+    font-size: 65px;
+}
+#a-logo-text:hover{
+    color: white !important;
+    text-decoration: none;
+}
+
+.hashtag{
+    padding: 8px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    margin: 6px 5px;
+    display: inline-block;
+}
+.hashtag:hover{
+    color: white;
+    background-color: #CB202D;
+    border-color: transparent;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #bbb !important;
+}
+
+#cover {
+  background: #666 center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 24px 8px;
+  height: 100%;
+  -webkit-transition: height 1s;
+  -o-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+}
+
+#cover-caption {
+  width: 100%;
+}
+
+/****************************************************** graphs section */
+#posts-section{
+    background-color: #eeeeee;
+}
+
+/****************************************************** post */
+.post{
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    box-shadow: 2px 2px 25px #ccc;
+    background-color: white;
+    color: #555;
+}
+.post-source{
+    font-size: 13px;
+    position: relative;
+    top: -10px;
+}
+
+.sentiment{
+    position: relative;
+    padding: 15px 15px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    top: -20px;
+    background-color: lightgrey;
+    text-shadow: 0px 0px 1px #333;
+}
+
+.fab{
+    font-size: 30px;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+.chart-container{
+    padding: 16px 4px;
+}
+
+.chart{
+    max-width: 100%;
+    padding: 24px 0;
+    margin: 24px 0;
+}
+
+/******************************************************** links */
+a.nav-link:not(.active) {
+    color: #333 !important;
+}
+
+/********************************************************* nav pills */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #CB202D !important;
+}
