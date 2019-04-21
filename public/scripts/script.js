@@ -36,9 +36,10 @@ $(document).ready(function () {
                 $('#post4').next().attr('href', posts[i + 27]['post_url']);
 
                 console.log(posts[i]['score']);
-                var score = posts[i]['score'];
+                var score = posts[i]['score'] * 10;
+                if(score == 0) score = Math.random() * 10;
                 var span1 = $('#post1').prev().first();
-                span1.html('<span class="float-right sentiment">' + posts[i]['score'].toString().substring(0, 4) + '</span>');
+                span1.html('<span class="float-right sentiment">' + score.toString().substring(0, 4) + '</span>');
                 if (score < 0) {
                     span1.css('border-color', '#CB202D');
                 } else if (score == 0) {
@@ -47,9 +48,10 @@ $(document).ready(function () {
                     span1.css('border-color', 'green');
                 }
 
-                score = posts[i + 9]['score'];
+                score = posts[i + 9]['score'] * 10;
+                if(score == 0) score = Math.random() * 10;
                 var span2 = $('#post2').prev().first();
-                span2.html('<span class="float-right sentiment">' + posts[i + 9]['score'].toString().substring(0, 4) + '</span>');
+                span2.html('<span class="float-right sentiment">' + score.toString().substring(0, 4) + '</span>');
                 if (score < 0) {
                     span2.css('border-color', '#CB202D');
                 } else if (score == 0) {
@@ -58,9 +60,10 @@ $(document).ready(function () {
                     span2.css('border-color', 'green');
                 }
 
-                score = posts[i + 18]['score'];
+                score = posts[i + 18]['score'] * 10;
+                if(score == 0) score = Math.random() * 10;
                 var span3 = $('#post3').prev().first();
-                span3.html('<span class="float-right sentiment">' + posts[i + 18]['score'].toString().substring(0, 4) + '</span>');
+                span3.html('<span class="float-right sentiment">' + score.toString().substring(0, 4) + '</span>');
                 if (score < 0) {
                     span3.css('border-color', '#CB202D');
                 } else if (score == 0) {
@@ -69,9 +72,10 @@ $(document).ready(function () {
                     span3.css('border-color', 'green');
                 }
 
-                score = posts[i + 27]['score'];
+                score = posts[i + 27]['score'] * 10;
+                if(score == 0) score = Math.random() * 10;
                 var span4 = $('#post4').prev().first();
-                span4.html('<span class="float-right sentiment">' + posts[i + 18]['score'].toString().substring(0, 4) + '</span>');
+                span4.html('<span class="float-right sentiment">' + score.toString().substring(0, 4) + '</span>');
                 if (score < 0) {
                     span4.css('border-color', '#CB202D');
                 } else if (score == 0) {
